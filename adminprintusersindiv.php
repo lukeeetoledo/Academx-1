@@ -11,7 +11,7 @@ class myPDF extends FPDF{
         $this->Cell(276,24, 'ACADEMX POST LIST',0,0,'C');
         $this->Ln(20);
         $this->SetFont('arial','',12);
-        $this->Cell(276,0, 'Compilation of posts in AcadeMx',0,0,'C');
+        $this->Cell(276,0, 'Compilation of users in AcadeMx',0,0,'C');
         $this->Ln(10);
     }
     function footer(){
@@ -22,31 +22,31 @@ class myPDF extends FPDF{
     function headerTable(){
         $this->SetFillColor(90,199,199);
         $this->SetFont('arial','B',12,);
-        $this->Cell(30,10,'Post ID',1,0,'C',true);
-        $this->Cell(40,10,'Post Title',1,0,'C',true);
-        $this->Cell(30,10,'User Id',1,0,'C',true);
-        $this->Cell(36,10,'Post Type',1,0,'C',true);
-        $this->Cell(30,10,'Post Group',1,0,'C',true);
-        $this->Cell(47,10,'Post Date',1,0,'C',true);
-        $this->Cell(35,10,'Like amount',1,0,'C',true);
-        $this->Cell(35,10,'Dislike Amount',1,0,'C',true);
+        $this->Cell(17,10,'User ID',1,0,'C',true);
+        $this->Cell(40,10,'First Name',1,0,'C',true);
+        $this->Cell(30,10,'Last Name',1,0,'C',true);
+        $this->Cell(30,10,'Sex',1,0,'C',true);
+        $this->Cell(18,10,'Age',1,0,'C',true);
+        $this->Cell(60,10,'Email',1,0,'C',true);
+        $this->Cell(45,10,'Username',1,0,'C',true);
+        $this->Cell(35,10,'Contact Number',1,0,'C',true);
         $this->Ln();
     }
     function viewTable($db){
         $this->SetFont('Times','',12);
-      
-        $stmt = $db->query('select * from amx_post_tbl');
+        $ID=$_GET['token'];
+        $stmt = $db->query("select * from amx_users_tbl where ID = '$ID'");
         while($data = $stmt->fetch(PDO::FETCH_OBJ)){
             $this->SetFillColor(63,63,63);
             $this->SetFont('arial','',12);
-            $this->Cell(30,10,$data->post_id,1,0,'C');
-            $this->Cell(40,10,$data->post_title,1,0,'C');
-            $this->Cell(30,10,$data->userid,1,0,'C');
-            $this->Cell(36,10,$data->post_type,1,0,'C');
-            $this->Cell(30,10,$data->post_group,1,0,'C');
-            $this->Cell(47,10,$data->post_date,1,0,'C');
-            $this->Cell(35,10,$data->like_amount,1,0,'C');
-            $this->Cell(35,10,$data->dislike_amount,1,0,'C');
+            $this->Cell(17,10,$data->ID,1,0,'C');
+            $this->Cell(40,10,$data->fname,1,0,'C');
+            $this->Cell(30,10,$data->lname,1,0,'C');
+            $this->Cell(30,10,$data->sex,1,0,'C');
+            $this->Cell(18,10,$data->age,1,0,'C');
+            $this->Cell(60,10,$data->email,1,0,'C');
+            $this->Cell(45,10,$data->username,1,0,'C');
+            $this->Cell(35,10,$data->contactnumber,1,0,'C');
             $this->Ln();
         }
     }
