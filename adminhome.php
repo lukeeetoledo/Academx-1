@@ -61,7 +61,7 @@ session_start();
                   .'<td style="width: 200px;" align="center">'.$row["post_date"].'</td>'
                   .'<td style="width: 200px;" align="center">'.$row["like_amount"].'</td>'
                   .'<td style="width: 200px;" align="center">'.$row["dislike_amount"].'</td>'
-                  ."<td style = 'width: 200px;' align='center;'><a href='adminviewpost.php? token=" . $row["post_id"] . "'> Viewpost </a><span>|</span><a href='adminprintpostindiv.php? token=" . $row["post_id"] . "'> Print </a><span>|</span><a onClick=\"javascript: return confirm('Are you sure you want to Delete this?');\" href='admindelete.php? token=". $row["post_id"] ."'> Delete </a></td>" 
+                  ."<td style = 'width: 200px;' align='center;'><a href='adminviewpost.php? token=" . $row["post_id"] . "'> Viewpost </a><span>|</span><a href='adminprintpostindiv.php? token=" . $row["post_id"] . "'target= 'blank'> Print </a><span>|</span><a onClick=\"javascript: return confirm('Are you sure you want to Delete this?');\" href='admindelete.php? token=". $row["post_id"] ."'> Delete </a></td>" 
                   .'</tr>';   
             }
           } else {
@@ -73,7 +73,7 @@ session_start();
         </div>
         </div>
         <div>
-        <a href="adminprintpost.php" class = "card_link">Print</a>
+        <a href="adminprintpost.php" target= "blank" class = "card_link">Print</a>
         </div>
     </div>
 

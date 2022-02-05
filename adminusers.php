@@ -62,7 +62,7 @@ session_start();
                   .'<td style="width: 200px;" align="center">'.$row["email"].'</td>'
                   .'<td style="width: 200px;" align="center">'.$row["username"].'</td>'
                   .'<td style="width: 200px;" align="center">'.$row["contactnumber"].'</td>'
-                  ."<td style = 'width: 200px;' align='center'><a href='adminprintusersindiv.php? token=" . $row["ID"] . "'> Print </a><span>|</span><a onClick=\"javascript: return confirm('Are you sure you want to Delete this?');\" href='admindeleteuser.php? token=". $row["ID"] ."'> Delete </a></td>" 
+                  ."<td style = 'width: 200px;' align='center'><a href='adminprintusersindiv.php? token=" . $row["ID"] . "' target= 'blank' > Print </a><span>|</span><a onClick=\"javascript: return confirm('Are you sure you want to Delete this?');\" href='admindeleteuser.php? token=". $row["ID"] ."'> Delete </a></td>" 
                   .'</tr>'; 
             }
           } else {
@@ -72,7 +72,7 @@ session_start();
         
         </div>
         <div>
-        <a href="adminprintusers.php" class = "card_link">Print</a>
+        <a href="adminprintusers.php"  target= "blank" class = "card_link">Print</a>
         </div>
     </div>
 

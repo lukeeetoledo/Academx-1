@@ -57,4 +57,4 @@ $pdf->AliasNbPages();
 $pdf->AddPage('L','A4',0);
 $pdf->headerTable();
 $pdf->viewTable($db);
-$pdf->Output();
+$pdf->Output("I");
