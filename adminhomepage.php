@@ -35,7 +35,8 @@ session_start();
                 <h4>admin</h4>
             </center>
             <a href="adminhome.php"><i class="fas fa-home"></i><span>Posts</span></a>
-            <a href="adminusers.php"><i class="fas fa-home"></i><span>Users</span></a>
+            <a href="adminreported.php"><i class="fas fa-circle"></i><span>Reported Post</span></a>
+            <a href="adminusers.php"><i class="fas fa-users"></i><span>Users</span></a>
             <div style="vertical-align: sub;">
                 <a href="logout.php"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
             </div>
