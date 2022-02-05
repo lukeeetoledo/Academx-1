@@ -32,8 +32,8 @@ class myPDF extends FPDF{
     }
     function viewTable($db){
         $this->SetFont('Times','',12);
-      
-        $stmt = $db->query('select * from amx_report_tbl');
+        $ID=$_GET['token'];
+        $stmt = $db->query("select * from amx_report_tbl where report_ID = '$ID'");
         while($data = $stmt->fetch(PDO::FETCH_OBJ)){
             $this->SetFillColor(63,63,63);
             $this->SetFont('arial','',12);

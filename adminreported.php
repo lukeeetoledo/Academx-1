@@ -32,34 +32,33 @@ session_start();
 
     <div class="container-fluid" style="background-color: white;height:100vh">
         <div class="contentx">
+        <h2>Reported Post</h2>
         <table class="table" border = "3">
        <tr >
+           <th style="text-align:center; font-size:22px">Report ID</th>
            <th style="text-align:center; font-size:22px">Post ID</th>
-           <th style="text-align:center; font-size:22px">Post Title</th>
+           <th style="text-align:center; font-size:22px">Reason</th>
+           <th style="text-align:center; font-size:22px">Reported By</th>
+           <th style="text-align:center; font-size:22px">Report Date</th>
            <th style="text-align:center; font-size:22px">Poster ID</th>
-           <th style="text-align:center; font-size:22px">Post Type</th>
-           <th style="text-align:center; font-size:22px">Post Group</th>
-           <th style="text-align:center; font-size:22px">Post Date</th>
-           <th style="text-align:center; font-size:22px">Report Count</th>
            <th style="text-align:center; font-size:22px">ACTION</th>
            <br>
        </tr>
        <?php
           //Display data
-          $sql = "SELECT * FROM amx_post_tbl";
+          $sql = "SELECT * FROM amx_report_tbl";
           $result = $conn-> query ($sql);
           
           if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
             echo  '<tr>';
-                echo '<td style="width: 200px;" align="center">'.$row["post_id"].'</td>'
-                  .'<td style="width: 200px;" align="center">'.$row["post_title"].'</td>'
-                  .'<td style="width: 200px;" align="center">'.$row["userid"].'</td>'
-                  .'<td style="width: 200px;" align="center" >'.$row["post_type"].'</td>'
-                  .'<td style="width: 200px;" align="center">'.$row["post_group"].'</td>'
-                  .'<td style="width: 200px;" align="center">'.$row["post_date"].'</td>'
-                  .'<td style="width: 200px;" align="center">'.$row["report_amount"].'</td>'
-                  ."<td style = 'width: 200px;' align='center;'><a href='adminviewpost.php? token=" . $row["post_id"] . "'> Viewpost </a><span>|</span><a href='adminprintpostindiv.php? token=" . $row["post_id"] . "'target= 'blank'> Print </a><span>|</span><a onClick=\"javascript: return confirm('Are you sure you want to Delete this?');\" href='admindelete.php? token=". $row["post_id"] ."'> Delete </a></td>" 
+                echo '<td style="width: 200px;" align="center">'.$row["report_ID"].'</td>'
+                  .'<td style="width: 200px;" align="center">'.$row["post_id"].'</td>'
+                  .'<td style="width: 200px;" align="center">'.$row["reason_content"].'</td>'
+                  .'<td style="width: 200px;" align="center" >'.$row["reported_by"].'</td>'
+                  .'<td style="width: 200px;" align="center">'.$row["report_date"].'</td>'
+                  .'<td style="width: 200px;" align="center">'.$row["poster_ID"].'</td>'
+                  ."<td style = 'width: 200px;' align='center;'><a href='adminviewpost.php? token=" . $row["post_id"] . "'> Viewpost </a><span>|</span><a href='adminprintreportedindiv.php? token=" . $row["report_ID"] . "'target= 'blank'> Print </a><span>|</span><a onClick=\"javascript: return confirm('Are you sure you want to Delete this?');\" href='admindeletereport.php? token=". $row["post_id"] ."'> Delete </a></td>" 
                   .'</tr>';   
             }
           } else {
@@ -71,7 +70,7 @@ session_start();
         </div>
         </div>
         <div>
-        <a href="adminprintpost.php" target= "blank" class = "card_link">Print</a>
+        <a href="adminprintreported.php" target= "blank" class = "card_link">Print</a>
         </div>
     </div>
 

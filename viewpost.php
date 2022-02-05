@@ -230,7 +230,7 @@ if(isset($_POST['SendReport']) ){
             $poster_ID = $row1['userid'];
         }
     }
-    $sqlReport = "INSERT INTO amx_report_tbl SET post_ID = '$postID', reason_content = '$content', reported_by = '$reporter', report_date = '$reportdate', poster_ID = '$poster_ID'";
+    $sqlReport = "INSERT INTO amx_report_tbl SET post_id = '$postID', reason_content = '$content', reported_by = '$reporter', report_date = '$reportdate', poster_ID = '$poster_ID'";
 
     if (!$conn->query($sqlReport)) {
         echo $conn->error;

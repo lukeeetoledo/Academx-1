@@ -32,8 +32,10 @@ session_start();
 
     <div class="container-fluid" style="background-color: white;height:100vh">
         <div class="contentx">
+        <h2>Post</h2>
         <table class="table" border = "3">
-       <tr >
+            
+       <tr>
            <th style="text-align:center; font-size:22px">Post ID</th>
            <th style="text-align:center; font-size:22px">Post Title</th>
            <th style="text-align:center; font-size:22px">Poster ID</th>

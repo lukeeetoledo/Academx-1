@@ -32,6 +32,7 @@ session_start();
 
     <div class="container-fluid" style="background-color: white;height:100vh">
         <div class="contentx">
+        <h2>Users</h2>
         <table class="table" border = "3">
        <tr >
            <th style="text-align:center; font-size:22px">User ID</th>
