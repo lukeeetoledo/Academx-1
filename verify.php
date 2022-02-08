@@ -23,6 +23,7 @@ if (isset($_GET['token'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_verify.css" />
+    <link rel="icon" type="image/png" href ="img/tablogo.png">
     <title>Verify</title>
 </head>
 
@@ -53,13 +54,13 @@ if (isset($_GET['token'])) {
                              <h3> [Student] Please fill up the form: </h3>
 
                         <label for="txt_university">1. Where do you study? </label>
-                        <input id="txt_university" type="text/css" placeholder="School/University"><br><br>
+                        <input id="txt_university" type="text/css" placeholder="School/University" ><br><br>
                         <label for="txt_course">2. What course are you taking? </label>
-                        <input id="txt_course" type="text/css" placeholder="ex. Bachelor of Science in Information Techonology"><br><br>
+                        <input id="txt_course" type="text/css" placeholder="ex. Bachelor of Science in Information Techonology" ><br><br>
                         <label for="txt_address">3. What is the address of your school/university? </label>
-                        <input id="txt_address"  type="text/css" placeholder="School Address"><br><br>
+                        <input id="txt_address"  type="text/css" placeholder="School Address"  ><br><br>
                         <label for="txt_year">4. What year are you currently enrolled in? </label>
-                        <input id="txt_year" type="text/css" placeholder="ex. 4th Year"> <br><br>
+                        <input id="txt_year" type="text/css" placeholder="ex. 4th Year" > <br><br>
                         <button type = "button" id = "next" onclick = "Next()">Next</button>         
                     </form>
                 </div>   

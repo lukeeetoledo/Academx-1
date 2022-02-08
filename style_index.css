@@ -194,14 +194,14 @@ form.sign-in-form {
 .container:before {
   content: "";
   position: absolute;
-  height: 1900px;
-  width: 1500px;
-  top: -10%;
-  right: 48%;
+  height: 2000px;
+  width: 1700px;
+  top: 10%;
+  right: 50%;
   transform: translateY(-50%);
   background-image: linear-gradient(-45deg, #3F3F3F 5%, #5AC7C7 95%);
   transition: 1.8s ease-in-out;
-  border-radius: 10%;
+  border-radius: 60%;
   z-index: 6;
 }
 
@@ -255,7 +255,7 @@ form.sign-in-form {
   height: 41px;
   font-weight: 600;
   font-size: 0.8rem;
-  margin-right:100px
+  margin-right:200px;
 }
 
 .right-panel .image,

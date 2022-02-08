@@ -113,7 +113,7 @@ if (isset($_POST["login"])) {
     <div class="forms-container">
       <div class="signin-signup">
         <form action="" method="post" class="sign-in-form">
-        <div style="margin-left: 140px; padding-bottom: 70px; width: 82%;">
+        <div style="margin-left: 140px; padding-bottom: 145px; width: 100%;">
         <img src="img/reallogo.png" class="image" alt="" />
         </div> 
         <h2 class="title">Log in</h2>
@@ -127,6 +127,7 @@ if (isset($_POST["login"])) {
           </div>
           <input type="submit" value="login" name="login" class="btn solid" />
           <p style="display: flex;justify-content: center;align-items: center;margin-top: 20px;"><a href="forgot-password.php" style="color: #4590ef;">Forgot Password?</a></p>
+          <div style ="margin-top:220px"></div>
          
         </form>
          
@@ -178,28 +179,30 @@ if (isset($_POST["login"])) {
     <div class="panels-container">
       <div class="panel left-panel">
         <div class="content">
-          <h3 style ="margin-right:100px">New here ?</h3>
-          <p style ="font-size: 19px;margin-right:100px">
-            What are you waiting for? <br><br>Be a member of <span>Acade</span><span style="color: #5AC7C7;">Mx</span>
+          <h3 style ="margin-right:200px">New here ?</h3>
+          <p style ="font-size: 19px;margin-right:200px">
+            What are you waiting for? <br><br>Be a member of <span>Acade</span><span style="color: #5AC7C7;">Mx</span> for free!
           </p>
           <button class="btn transparent" id="sign-up-btn">
             Sign up 
           </button>
           
         </div>
-        <img src="img/log.svg" class="image" alt="" />
+        <img src="img" class="image" alt="" />
       </div>
       <div class="panel right-panel">
         <div class="content">
-          <h3 style ="margin-right:100px">One of us?</h3>
-          <p style ="font-size: 19px; margin-right:100px">
-          Already one of us? Enter now!
+          <h3 style ="margin-right:200px">One of us?</h3>
+          <p style ="font-size: 19px; margin-right:200px">
+          Stop stalling, Enter now!
           </p>
           <button class="btn transparent" id="sign-in-btn">
             Login
           </button>
         </div>
-        <img src="img/register.svg" class="image" alt="" />
+        <div style="margin-left: 100px; padding-bottom: 70px; width: 95%;">
+        <img src="img/logosaregister.PNG" class="image" alt="" />
+        </div> 
       </div>
     </div>
   </div>
