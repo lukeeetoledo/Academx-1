@@ -94,9 +94,9 @@ if (isset($_POST["resetPassword"])) {
             Do not worry, just simply enter your
             email address !
           </p>
-        </div>
-        <img style = "width:72%; margin-right:1px;"  src="img/1.png" class="image" alt="" />
-      </div>
+        
+        <img style = "width:80%; margin-right:90px;"  src="img/logoforgotpass.PNG" class="image" alt="" />
+      
     </div>
   </div>
 

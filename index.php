@@ -113,7 +113,7 @@ if (isset($_POST["login"])) {
     <div class="forms-container">
       <div class="signin-signup">
         <form action="" method="post" class="sign-in-form">
-        <div style="margin-left: 140px; padding-bottom: 145px; width: 100%;">
+        <div style="margin-left: 140px; padding-bottom: 50px; width: 100%;">
         <img src="img/reallogo.png" class="image" alt="" />
         </div> 
         <h2 class="title">Log in</h2>
@@ -127,7 +127,7 @@ if (isset($_POST["login"])) {
           </div>
           <input type="submit" value="login" name="login" class="btn solid" />
           <p style="display: flex;justify-content: center;align-items: center;margin-top: 20px;"><a href="forgot-password.php" style="color: #4590ef;">Forgot Password?</a></p>
-          <div style ="margin-top:220px"></div>
+          <div style ="margin-top:150px"></div>
          
         </form>
          
