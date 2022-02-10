@@ -6,7 +6,7 @@ $db = new PDO('mysql:host=localhost;dbname=academx_db','root','');
 class myPDF extends FPDF{
     function header(){
         
-        $this->Image('img/tablogo.png',10,6);
+        $this->Image('img/tablogo.png',69,7);
         $this->SetFont('Arial', 'B',25);
         $this->Cell(276,24, 'ACADEMX POST LIST',0,0,'C');
         $this->Ln(20);
