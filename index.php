@@ -179,14 +179,17 @@ if (isset($_POST["login"])) {
     <div class="panels-container">
       <div class="panel left-panel">
         <div class="content">
-          <h3 style ="margin-right:200px">New here ?</h3>
+          <h3 style ="margin-right:200px;">New here ?</h3>
           <p style ="font-size: 19px;margin-right:200px">
             What are you waiting for? <br><br>Be a member of <span>Acade</span><span style="color: #5AC7C7;">Mx</span> for free!
           </p>
           <button class="btn transparent" id="sign-up-btn">
             Sign up 
           </button>
-          
+          </div>
+      <div></div>
+      </div>
+
       <div class="panel right-panel">
         <div class="content">
           <h3 style ="margin-right:200px">One of us?</h3>
