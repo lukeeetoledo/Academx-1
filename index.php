@@ -187,9 +187,6 @@ if (isset($_POST["login"])) {
             Sign up 
           </button>
           
-        </div>
-        <img src="img" class="image" alt="" />
-      </div>
       <div class="panel right-panel">
         <div class="content">
           <h3 style ="margin-right:200px">One of us?</h3>
